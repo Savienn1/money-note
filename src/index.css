@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1{
+    display: flex;
+    gap: 10px;
+}
+.money-note{
+    display: flex;
+    width: 800px;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
+}
+.money-note-uang{
+    border-right: 2px solid #0f0f0f;
+    padding: 20px;
+    width: 33%;
+}
+.money-note-uang:last-child{
+    border: none;
+}
+.tambah{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.tambah Button:last-child{
+    margin-left: 20px;
+}
