@@ -1,45 +1,23 @@
-import { useState, useContext } from "react";
-import { Button } from "react-bootstrap";
-import { DataContext } from "../note";
+import React, { useContext } from "react";
+import { DataContext } from "../data";
 
-export default function TambahNote({addMoney}) {
-    const [detail, setDetail] = useState("")
-    const [nominal, setNominal] = useState(0)
-    const [status, setStatus] = useState(false)
-    const { addData } = useContext(DataContext);
+export default function Tambah( {} ) {
+    const { data, addData } = useContext(DataContext);
 
-    handleSubmit = (e) => {
-        e.preventDefault();
+    const handleAddTransaction = () => {
+        const type = 
+        const nominal = 
+        if (!type || !nominal || isNaN(nominal)) return;
 
-        if (addMoney == tambah) {
-            setStatus(true)
-        }
-        
-        if (detail.trim() && nominal && status) {
-            addData(detail, nominal)
-
-            setDetail("")
-            setNominal(0)
-        } 
-    }
+        addData({ type, nominal: parseInt(nominal) });
+        alert("Transaksi ditambahkan!");
+    };
 
     return (
-        <>
-            <div className="tambah-note">
-                <form onSubmit={handleSubmit}>
-                    <input 
-                        type="text" 
-                        value={newNote.detail}
-                        onChange={(e) => setInput(e.target.value)}
-                    />
-                    <input 
-                        type="number" 
-                        value={newNote.nominal}
-                        onChange={(e) => setInput(e.target.value)}
-                    />
-                    <Button type="submit">Add</Button>
-                </form>
-            </div>
-        </>
-    )
+        <div>
+            <input type="text" value={data.type}/>
+            <input type="number" value={data.nominal}/>
+            <button onClick={handleAddTransaction}>Tambah Data</button>      
+        </div>
+    );
 }
