@@ -18,22 +18,24 @@ body{
 }
 .money-note{
     display: flex;
-    width: 600px;
-    height: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 80px;
     background-color: grey;
-    padding: 10px;
     border-radius: 10px;
 }
 .money-note-uang{
     border-right: 2px solid #0f0f0f;
     padding: 20px;
     width: 33%;
+    height: 90%;
 }
 .money-note-uang h3{
-    font-size: 20px;
+    font-size: 15px;
 }
 .money-note-uang p{
-    font-size: 12px;
+    font-size: 10px;
 }
 .money-note-uang:last-child{
     border: none;
