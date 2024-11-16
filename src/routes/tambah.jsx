@@ -16,7 +16,7 @@ export default function Tambah({status, show}) {
     const newNote = (e) => {
         e.preventDefault();
 
-        if (!type) {
+        if (!detail) {
         setShowAlert({ type: "danger", message: "Detail tidak boleh kosong!" });
         return;
         }

@@ -1,5 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import { DataContext } from "../data";
+import React from "react";
 import { InputGroup, Alert,  } from "react-bootstrap";
 
 export function ShowMoney() {
@@ -21,9 +22,11 @@ export function ShowMoney() {
                 if (item.status === true){
                     totalPemasukkan += nominal;
                     totalUang += nominal;
-                }if (item.status === false) {
+                    console.error("penghitungan pemasukkan berhasil")
+                }else if (item.status === false) {
                     totalPengeluaran += nominal;
                     totalUang -= nominal;
+                    console.error("penghitungan pengeluaran berhasil")
                 } else {
                     console.error("penghitungan bermasalah")
                 }   
@@ -54,19 +57,19 @@ export function ShowMoney() {
         </div>
     )
 }
-// export default function ShowNote(){
-//     const { data } = useContext(DataContext)
+export function ShowNote(){
+    const { data, deleteData } = useContext(DataContext)
 
-//     return(
-//         <div>
-//         {data.map((datas, index) => (
-//             <React.Fragment key={index}>
-//                 <InputGroup>
-//                     <Alert variant="primary">{datas.type} | {datas.nominal}</Alert>
-//                     <InputGroup.Text variant="danger" className="h-1" onClick={() => deleteData(index)}>delete</InputGroup.Text>
-//                 </InputGroup>
-//             </React.Fragment>
-//         ))}
-//         </div>
-//     )
-// }
+    return(
+        <div>
+        {data.map((datas, index) => (
+            <React.Fragment key={index}>
+                <InputGroup>
+                    <Alert variant="primary">{datas.detail} | {datas.nominal}</Alert>
+                    <InputGroup.Text variant="danger" className="h-1" onClick={() => deleteData(index)}>delete</InputGroup.Text>
+                </InputGroup>
+            </React.Fragment>
+        ))}
+        </div>
+    )
+}

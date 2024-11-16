@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 import { useState} from "react";
 import Tambah from "./tambah";
-import { ShowMoney } from "./note";
+import { ShowMoney, ShowNote} from "./note";
 import { DataProvider } from "../data";
 
 export default function Root() {
@@ -28,6 +28,7 @@ export default function Root() {
                 <div>
                     <h2>Data Transaksi</h2>
                 </div>
+                <ShowNote />
             </DataProvider>
         </>
     );
