@@ -88,46 +88,5 @@ const Sidebar = ( ) => {
             </div>
         </>
     )
-
-    // return (
-    //     <>
-    //         <div className="w-fit h-creen p-2 flex flex-col gap-5">
-    //             <div className="flex flex-col gap-2 rounded-4xl w-fit h-fit px-1 py-2">
-    //                 <div className="flex items-center px-1">
-    //                     <GrMoney className="w-6 h-6 text-black strokeWidth={2.5}"/>
-    //                 </div>
-    //                 <div className="flex items-center">
-    //                     <p className="text-[9px] text-center leading-tight text-gray-700 font-semibold" >Money <br />Tracker</p>
-    //                 </div>
-    //             </div>
-    //             <div 
-    //                 className="flex flex-col gap-2 rounded-4xl w-fit h-fit px-1 py-2 bg-[#CBD9E6]"
-    //                 >
-    //                 {navItems.map((item) => (
-    //                     <Link
-    //                         key={item.path}
-    //                         to={item.path}
-    //                         className={`flex items-center gap-2 p-2 rounded-xl ${
-    //                             location.pathname === item.path
-    //                                 ? "bg-black text-white"
-    //                                 : "bg-white text-gray-800"
-    //                         }`}
-    //                     >
-    //                         {item.icon}
-    //                         {isOpen && <span className="text-sm font-medium">{item.name}</span>}
-    //                     </Link>
-    //                 ))}
-    //             </div>
-    //                 <div className="flex items-center p-1.5 bg-black rounded-4xl">
-    //                     <BiHome  className="w-5 h-5 text-white"/>
-    //                 </div>
-    //             <div>
-    //                 <div>
-    //                     <BiHome/>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </>
-    //)
 }
 export default Sidebar

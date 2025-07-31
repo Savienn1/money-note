@@ -11,7 +11,7 @@ const Testing = () => {
     <main className="bg-white p-4">
         {/* Greeting */}
         <div className="mb-4">
-        <h1 className="text-2xl font-bold">Hi, Caroline</h1>
+        <h1 className="text-2xl font-bold text-monsterrat">Hi, Caroline</h1>
         <p>Your personal Tracking wealth</p>
         </div>
 
