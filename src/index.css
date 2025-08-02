@@ -6,15 +6,18 @@
   }
 }
 
-.bg-gray-dark {
+.bg-grey-dark {
   background-color: #708090;
 }
-.bg-gray-light {
+.bg-grey-light {
   background-color: #CBD9E6;
 }
 
-.text-gray {
-  color: #595454;
+.text-grey {
+  color: #708090;
+}
+.text-grey-light {
+  color: #CBD9E6;
 }
 
 .text-inter {
@@ -28,10 +31,20 @@
 .text-bitcount {
   font-family: 'Bitcount Prop Single', system-ui;
 }
+.text-green-pastel {
+  color: #47A992;
+}
+.text-red-pastel {
+  color: #DA6C6C;
+}
 
 .bg-green-pastel {
   background-color: #47A992;
 }
 .bg-red-pastel {
   background-color: #DA6C6C;
+}
+
+.bg-blue-dark{
+  background-color: #3E5879;
 }

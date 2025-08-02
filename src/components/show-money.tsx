@@ -1,6 +1,6 @@
 import React from "react";
 import { BiMoney } from "react-icons/bi";
-import { MdInbox, MdOutbox } from "react-icons/md";
+import { MdMoveToInbox, MdOutbox } from "react-icons/md";
 
 interface Fund {
     label: string;
@@ -22,12 +22,12 @@ const ShowMoney = () => {
 
     const funds: Fund[] = [
         { label: "Saldo", nominal: `Rp${saldo.toLocaleString()}`, icon: <BiMoney />, text_color: "white" },
-        { label: "Pemasukkan", nominal: `+Rp${pemasukkan.toLocaleString()}`, icon: <MdInbox />, text_color: "#093030" },
+        { label: "Pemasukkan", nominal: `+Rp${pemasukkan.toLocaleString()}`, icon: <MdMoveToInbox />, text_color: "#093030" },
         { label: "Pengeluaran", nominal: `-Rp${pengeluaran.toLocaleString()}`, icon: <MdOutbox />, text_color: "#900B09" },
     ];
 
     return (
-        <div className="bg-gray-dark w-full h-27 rounded-[40px] flex items-center justify-center">
+        <div className="bg-grey-dark w-full h-27 rounded-[40px] flex items-center justify-center">
             {funds.map((fund, idx) => (
             <div className={`w-3/10 h-full flex flex-col items-start justify-center border-white px-2
             ${idx === 0 ? "border-x-1" : ""} ${idx === funds.length - 1 ? "border-x-1" : ""}`}>

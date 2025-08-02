@@ -17,9 +17,9 @@ const HealthyBar = () => {
                 </div>
             </div>
             <div className=' w-2/6 h-full flex items-center justify-start pl-2'>
-                <span className='h-full w-10 flex items-center'><IoCheckboxOutline className='text-4xl text-gray'/></span>
+                <span className='h-full w-10 flex items-center'><IoCheckboxOutline className='text-4xl text-grey'/></span>
                 <div className='flex flex-col'>
-                    <p className='text-sm text-gray'>{percentage}% {warn}</p>
+                    <p className='text-sm text-grey'>{percentage}% {warn}</p>
                 </div>
             </div>
         </div>

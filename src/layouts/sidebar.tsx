@@ -6,7 +6,6 @@ import { GrAnalytics, GrMoney } from "react-icons/gr";
 import { BiNotification } from "react-icons/bi";
 import { MdOutlineSettings } from "react-icons/md";
 import { IoMdStats } from "react-icons/io";
-import { AiOutlineSetting } from "react-icons/ai";
 
 import Profile from "../assets/profile.jpeg";
 import { BsLayoutSidebarInset } from "react-icons/bs";
