@@ -34,9 +34,17 @@
 .text-green-pastel {
   color: #47A992;
 }
+.text-green-dark {
+  color: #397564;
+}
+.bg-green-dark {
+  background-color: #397564;
+}
+
 .text-red-pastel {
   color: #DA6C6C;
 }
+
 
 .bg-green-pastel {
   background-color: #47A992;

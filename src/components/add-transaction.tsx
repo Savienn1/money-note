@@ -1,6 +1,6 @@
-import React from 'react'
 import { BiMoney, BiPlus } from 'react-icons/bi'
 import { MdFoodBank } from 'react-icons/md'
+import { NavLink } from 'react-router-dom'
 
 const AddTransaction = () => {
   return (
@@ -14,8 +14,32 @@ const AddTransaction = () => {
                     className="flex-1 text-end font-semibold bg-transparent outline-none text-grey text-base"
                 />
             </div>
-            <div className='flex items-center justify-between w-full px-4 bg-amber-800 h-1/2'>
-                
+            <div className='flex items-center justify-between w-full h-1/2'>
+                <NavLink
+                    to="/pemasukkan"
+                    className={({ isActive }) =>
+                        `flex items-center justify-center rounded-xl w-fit h-fit p-2 ${
+                            isActive
+                                ? 'bg-[#5C8D99] text-white' // active: darker blue
+                                : 'bg-[#9ac8ce] text-[#5C8D99]' // passive: lighter blue, blue text
+                        }`
+                    }
+                >
+                    <p className='font-normal text-sm'>Pemasukkan</p>
+                </NavLink>
+                <div className='bg-grey-dark w-[2px] h-8'></div>
+                <NavLink
+                    to="/pengeluaran"
+                    className={({ isActive }) =>
+                        `flex items-center justify-center rounded-xl w-fit h-fit p-2 ${
+                            isActive
+                                ? 'bg-[#A05A5A] text-white' // active: darker red
+                                : 'bg-[#E7B6B6] text-[#A05A5A]' // passive: lighter red, red text
+                        }`
+                    }
+                >
+                    <p className='font-normal text-sm'>Pengeluaran</p>
+                </NavLink>
             </div>
         </div>
         <div className='col-span-2 flex items-center justify-center'>
